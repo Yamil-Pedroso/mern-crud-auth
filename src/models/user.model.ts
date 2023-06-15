@@ -30,8 +30,12 @@ const userSchema = new Schema<IUser>({
         minlength: 8,
         maxlength: 1024
     }
-});
+}, {
+    timestamps: true,
+}
+
+);
 
 const User = model<IUser>('User', userSchema);
 
-export { User, IUser };
+export { User, IUser  };

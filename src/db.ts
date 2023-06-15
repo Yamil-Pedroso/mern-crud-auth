@@ -6,7 +6,7 @@ dotenv.config();
 colors.enable();
 
 export const connectDB = async () => {
-    const MongoDB = process.env.MONGO_URI;
+    const MongoDB = process.env.MONGO_URI
     try {
         await mongoose.connect(MongoDB!);
         console.log('Connected to MongoDB'.green.bold)

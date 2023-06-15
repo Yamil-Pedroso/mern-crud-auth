@@ -26,6 +26,8 @@ const userSchema = new mongoose_1.Schema({
         minlength: 8,
         maxlength: 1024
     }
+}, {
+    timestamps: true,
 });
 const User = (0, mongoose_1.model)('User', userSchema);
 exports.User = User;
